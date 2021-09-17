@@ -1,0 +1,110 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+}
+
+/* Style for Main Container */
+.main {
+  display: flex;
+  width: 1200px;
+  height: 455px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+/* Style for left Column of main section */
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  height: 100%;
+}
+#user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: hsl(235, 45%, 61%);
+  border-radius: 12px;
+  height: 75%;
+  margin-bottom: -10px;
+  z-index: 1;
+}
+#activity {
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  height: 35%;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* style for right column of main section */
+.activity-cards {
+  display: grid;
+  width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 65px 150px 25px 65px 150px;
+  column-gap: 24px;
+}
+
+.card-bg-top {
+  grid-row: 1 / 2;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.card-bg-bottom {
+  grid-row: 4/5;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 16px;
+  margin-top: -15px;
+}
+.card > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#work {
+  grid-column: 1/2;
+  grid-row: 2 / span 1;
+}
+#play {
+  grid-column: 2/3;
+  grid-row: 2 / span 1;
+}
+#study {
+  grid-column: 3/4;
+  grid-row: 2 / span 1;
+}
+#exercise {
+  grid-column: 1/2;
+  grid-row: 5 /6;
+}
+#social {
+  grid-column: 2/3;
+  grid-row: 5 / 6;
+}
+#self-care {
+  grid-column: 3/4;
+  grid-row: 5 /6;
+}
